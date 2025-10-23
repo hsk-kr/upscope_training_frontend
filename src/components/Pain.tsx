@@ -3,7 +3,7 @@ import { fetchPain } from "../api/api";
 import { useNavigate, useParams } from "react-router";
 import type { Pain } from "../types/pain";
 
-const Pain = () => {
+const PainComp = () => {
   let params = useParams();
   const navigate = useNavigate();
   const [pain, setPain] = useState<Pain | null>(null);
@@ -45,4 +45,4 @@ const Pain = () => {
   );
 };
 
-export default Pain;
+export default PainComp;
