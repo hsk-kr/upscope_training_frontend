@@ -1,7 +1,9 @@
 import axios from "axios";
 
+const API_URL = "https://upscope.keepsaying.com";
+
 const api = (pathname: string) => {
-  return axios.get(`${import.meta.env.VITE_API_URL}${pathname}`);
+  return axios.get(`${API_URL}${pathname}`);
 };
 
 export const fetchPains = async () => {
