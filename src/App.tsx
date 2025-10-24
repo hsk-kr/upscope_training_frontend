@@ -13,7 +13,7 @@ const router = createBrowserRouter(
       children: [
         { index: true, Component: PainList },
         {
-          path: "/:id",
+          path: ":id",
           Component: Pain,
         },
       ],
