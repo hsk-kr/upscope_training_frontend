@@ -5,7 +5,7 @@ const api = axios.create({
 });
 
 export const fetchPains = async () => {
-  const res = await api("/pains");
+  const res = await api.get("/pains");
 
   if (res.status !== 200) {
     throw new Error("Failed to fetch");
@@ -15,7 +15,7 @@ export const fetchPains = async () => {
 };
 
 export const fetchPain = async (id: string) => {
-  const res = await api(`/pains/${id}`);
+  const res = await api.get(`/pains/${id}`);
 
   if (res.status !== 200) {
     throw new Error("Failed to fetch");
