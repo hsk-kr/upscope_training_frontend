@@ -11,11 +11,11 @@ const router = createBrowserRouter(
       path: "/",
       Component: Template,
       children: [
-        { index: true, Component: PainList },
         {
           path: "/pains/:id",
           Component: Pain,
         },
+        { path: "*", Component: PainList },
       ],
     },
   ],
