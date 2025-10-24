@@ -46,7 +46,7 @@ const PainList = () => {
           );
 
           return pain.available ? (
-            <Link to={{ pathname: `/${pain._id}` }}>{comp}</Link>
+            <Link to={{ pathname: `/pains/${pain._id}` }}>{comp}</Link>
           ) : (
             comp
           );
